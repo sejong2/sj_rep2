@@ -10,11 +10,14 @@ while guess != secret and tries < 6:
     guess = input("What's yer guess? ")
     if guess < secret:
         print "Too low, ye scurvy dog!"
-    if guess > secret:
+    elif guess > secret:
         print "Too high, landlubber!"
 
 
     tries = tries + 1
 
 if guess == secret:
-    print "Avast! Ye got it! Found
+    print "Avast! Ye got it! Found my secret, ye did!"
+else:
+    print "no more guesses! Better luck next time, matey!"
+    print "The secret number was", secret
